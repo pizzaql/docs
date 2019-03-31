@@ -1,0 +1,20 @@
+{
+  "name": "pizzaql-docs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "docz dev",
+    "build": "docz build",
+    "now-build": "npm run build",
+    "test": "xo"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "docz": "1.0.0-rc.6",
+    "docz-theme-default": "1.0.0-rc.6",
+    "xo": "*"
+  }
+}
