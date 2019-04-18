@@ -6,7 +6,7 @@
 
 ### Development
 
-## Prerequisites
+#### Prerequisites
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
@@ -14,7 +14,7 @@
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Auth0 Account](https://auth0.com/)
 
-## Steps
+#### Steps
 
 1. Clone this repository:
 
@@ -70,5 +70,21 @@ npm run dev
 - Admin dashboard at `http://localhost:3000/admin` (you will need to login to see the list of orders)
 
 ### Production
+
+To build the application in production mode, run:
+
+```
+npm run build
+```
+
+You can then run the optimized version of PizzaQL, by executing the following command:
+
+```
+npm start
+```
+
+## License
+
+MIT
 
 
