@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": ["pizzaql.now.sh"],
+    "alias": ["docs.pizzaql.tech"],
     "builds": [
       { "src": "package.json", "use": "@now/static-build" }
     ],
