@@ -27,7 +27,11 @@ git clone https://github.com/pizzaql/pizzaql && cd pizzaql
 cd backend
 
 # Deploy the database & Prisma ORM
-docker-compose up -d && prisma deploy
+docker-compose up -d
+
+# Deploy Prisma
+# If you have issues running this command, try adding the --dry flag
+prisma deploy
 
 # Start the GraphQL Yoga server
 npm install && npm start
@@ -46,6 +50,7 @@ npm install
 4. Edit the `settings.js` file and include your Auth0's client id & domain:
 
 ```js
+// You can also use environmental variables (recommended in production!)
 const clientID = process.env.CLIENTID || 'YOUR_AUTH0_CLIENTID';
 const domain = process.env.DOMAIN || 'YOUR_AUTH0_DOMAIN';
 
